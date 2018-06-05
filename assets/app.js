@@ -6,13 +6,14 @@ window.onload = function (){
 
 //SEARCH
 
-let search = function (array,element) {
-  for (var i = 0; i<array.lenght; i++) {
+const search = function (array, element) {
+
+  for (var i = 0; i<array.length; i++) {
     if (array[i] === element) { //le digo que compare con el elemnto atra vez de ===
       return i 
     } 
   }
 }
-console.log(search([1,2,3,4,5,6,7,8],7)); //devuelve el 6
-console.log(search([1,2,3,4,5,6,7,8],10)); //no encuentra el elemento en el array porque no hay nada que mostrar
+console.log(search([1,2,3,4,5,6,7,8], 7)); //devuelve el 6
+console.log(search([1,2,3,4,5,6,7,8], 10)); //no encuentra el elemento en el array porque no hay nada que mostrar
 }
